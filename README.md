@@ -61,7 +61,7 @@ O relatório técnico (relatorio.md) documenta todo o processo de engenharia.
 
 Mantenha os nomes dos arquivos em minúsculas, sem acentos ou espaços, usando _ ou -.
 
-
+```text
 template_sensor/
 ├── README.md          → Descrição completa do projeto (sensor, ligações, execução e checklist)
 ├── relatorio.md       → Relatório técnico da dupla (resultados, análise e conclusões)
@@ -84,4 +84,4 @@ template_sensor/
     ├── test_ruido.py  → Avaliação de ruído ou estabilidade
     └── logs/          → Registros experimentais, dados e gráficos
 
-
+```
