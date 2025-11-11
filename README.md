@@ -18,17 +18,39 @@
 ![conexoes](docs/conexoes.jpg)
 
 ## 3. Dependências
-- MicroPython/C versão:
-- Bibliotecas utilizadas:
-- Como instalar (passo a passo):
+MicroPython/C versão:
+Recomendado: MicroPython v1.21.0 
+
+Bibliotecas utilizadas:
+.machine — biblioteca nativa do MicroPython para GPIO e I²C
+.time — biblioteca nativa para controle de tempo (sleep, sleep_us)
+.ustruct — biblioteca nativa usada para empacotar/desempacotar dados binários
+.array — biblioteca nativa usada para armazenar dados em formato binário
+.bme280.py — biblioteca local (arquivo fornecido no projeto)
+
+Como instalar:
+1.Instale o MicroPython na placa (via Thonny IDE
+ → Ferramentas → Opções → Interprete → Instalar firmware MicroPython).
+2.Conecte a placa via USB e abra o Thonny.
+3.Copie os arquivos do projeto para a placa:
+ .bme280.py → raiz da placa
+ .main.py → raiz da placa (executa automaticamente na inicialização)
+4.Salve e execute o script (main.py) pelo Thonny.
 
 ## 4. Como executar
-MicroPython (Thonny): copiar src/main.py para a placa e rodar.
+Via MicroPython(Thonny):
+1.Abra o Thonny.
+2.Conecte a placa.
+3.No painel da esquerda, copie o arquivo src/main.py para a placa.
+4.Clique em Executar → Executar no dispositivo.
+5.O terminal começará a exibir os resultados
 
 ## 5. Exemplos de uso
-- `src/exemplo_basico.py` — leitura bruta  
-- `src/exemplo_filtrado.py` — leitura com média móvel  
-- `test/` — códigos de teste com instruções  
+src/blink.py — leitura bruta
+Lê diretamente os valores crus do sensor (sem compensação), útil para testes de comunicação.
+
+src/blink_média.py — leitura com média móvel
+Faz várias leituras consecutivas e calcula a média para reduzir ruído nas medições.
 
 ## 6. Resultados e validação
 ![conexoes](docs/resultado1.jpg)
