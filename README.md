@@ -1,8 +1,8 @@
 # <NOME DO SENSOR> — Sensores na BitDogLab
 
-**Dupla:** Nome A (RA / @usuario), Nome B (RA / @usuario)  
-**Turma:** EA801 — 2025S2  
-**Repositório:** (URL deste repo)
+**Dupla:** Bruno Soria(216041/bruno.aira.soria@gmail.com, Pedro Crocco(239933/p239933@dac.unicamp.br) 
+**Turma:** EA701 A— 2025S2  
+**Repositório:** https://github.com/ChristopherSoria/EA701_2025S2_Sensores_BitDogLab
 
 ## 1. Descrição do sensor
 - Fabricante / modelo: Bosch Sensortec - BME280
