@@ -5,17 +5,16 @@
 **Repositório:** (URL deste repo)
 
 ## 1. Descrição do sensor
-- Fabricante / modelo:
-- Princípio de funcionamento:
-- Tensão/consumo típicos:
+- Fabricante / modelo: Bosch Sensortec - BME280
+- Princípio de funcionamento: Sensor integrado de pressão e temperatura. Sensor de pressão é composto de um diafragma de silício com resistores piezorresistivos. O sensor de temperatura é composto de termistores.
+- Tensão/consumo típicos: — Pressão + Temp @ 1 Hz: ~2,8 µA
 - Faixa de medição / resolução:
-- Datasheet (URL):
+ Operação: -40 a +85 °C para temperatura. 
+ Pressão: 300 - 1100 hPa para pressão atmosférica.
+- Datasheet (URL): https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf
 
 ## 2. Conexões de hardware
-- Tabela indicando as conexões entre BitDogLab e sensor:
-- Observações (resistores, alimentação externa, níveis lógicos):
-
-**Tabela de conexões (imagem em `docs/`):**  
+**Tabela de conexões:**  
 ![conexoes](docs/conexoes.jpg)
 
 ## 3. Dependências
@@ -24,10 +23,7 @@
 - Como instalar (passo a passo):
 
 ## 4. Como executar
-```bash
-# MicroPython (Thonny): copiar src/main.py para a placa e rodar
-# C (Pico SDK): ver docs/compilacao.md
-```
+MicroPython (Thonny): copiar src/main.py para a placa e rodar.
 
 ## 5. Exemplos de uso
 - `src/exemplo_basico.py` — leitura bruta  
@@ -35,7 +31,8 @@
 - `test/` — códigos de teste com instruções  
 
 ## 6. Resultados e validação
-- Prints/plots, fotos do setup, limitações, ruídos, dicas.
+![conexoes](docs/resultado1.jpg)
+![conexoes](docs/resultado2.jpg)
 
 ## 7. Licença
 - Ver arquivo `LICENSE`.
